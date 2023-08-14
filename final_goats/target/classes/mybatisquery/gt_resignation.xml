@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+				"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+	<mapper namespace="com.gt.s.kos.resignation.dao.GtResignationDAO">
+	
+		<insert id="gtResignationInsert" parameterType="gtresignationvo">
+			
+			INSERT INTO GOAT_RESIGNATION 
+					(
+					 GRNUM
+					
+					,INSERTDATE
+					,UPDATEDATE
+					,DELETEYN				
+					) 
+			VALUES
+					(
+					 #{grnum}			
+					,SYSDATE
+					,SYSDATE
+					,'Y'
+			
+					)		
+		</insert>
+		
+		<update id="gtResignationInsertFile" parameterType="gtresignationvo">
+			
+			UPDATE 		GOAT_RESIGNATION
+			SET 		GRFILE = #{grfile}
+			WHERE 		1=1
+			AND 		GRNUM = #{grnum}
+			
+		</update>
+		
+		
+
+	
+	</mapper>

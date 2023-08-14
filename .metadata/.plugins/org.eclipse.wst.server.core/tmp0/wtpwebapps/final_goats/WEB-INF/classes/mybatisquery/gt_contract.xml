@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+          "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+          
+<mapper namespace="com.gt.s.kos.contract.dao.GtContractDAO">
+
+	<insert id="gtContractInsert" parameterType="gtcontractvo">
+	
+		INSERT INTO GOAT_CONTRACT(
+									 gcnum         <!-- 1 --> 
+									,gcsubject     <!-- 2 --> 
+									,gcsalplace    <!-- 3 --> 
+									,gcpurchase    <!-- 4 --> 
+									,gccontent     <!-- 5 --> 
+									,gcconform     <!-- 6 --> 
+									,gcsalitem     <!-- 7 --> 
+									,gcsalquantity <!-- 8 --> 
+									,gcsalamount   <!-- 9 --> 
+									,gcpuritem     <!-- 10 -->
+									,gcpuramount   <!-- 11 -->
+									,gcattach      <!-- 12 -->
+									,gcsign        <!-- 13 -->
+									,gcfile        <!-- 14 -->
+									,insertdate    <!-- 15 -->
+									,updatedate    <!-- 16 -->
+									,deleteyn      <!-- 17 -->
+									,genum         <!-- 18 -->
+									,writer        <!-- 19 -->
+									,reference     <!-- 20 -->
+									,approver      <!-- 21 -->
+									,dept          <!-- 22 -->
+									,proval        <!-- 23 -->      
+						      <!-- 24 -->        
+									 )
+									 VALUES
+									 (
+									 #{gcnum}               <!-- 1 --> 
+									,#{gcsubject}           <!-- 2 --> 
+									,#{gcsalplace}          <!-- 3 --> 
+									,#{gcpurchase}          <!-- 4 --> 
+									,#{gccontent}           <!-- 5 --> 
+									,#{gcconform}           <!-- 6 --> 
+									,#{gcsalitem}           <!-- 7 --> 
+									,#{gcsalquantity}       <!-- 8 --> 
+									,#{gcsalamount}         <!-- 9 --> 
+									,#{gcpuritem}           <!-- 10 -->
+									,#{gcpuramount}        <!-- 11 -->
+									,#{gcattach}            <!-- 12 -->
+									,#{gcsign}              <!-- 13 -->
+									,#{gcfile}              <!-- 14 -->
+									,TO_CHAR(TO_DATE(SYSDATE), 'YYYY-MM-DD')  <!-- 15 -->
+									,TO_CHAR(TO_DATE(SYSDATE), 'YYYY-MM-DD')  <!-- 16 -->
+									,'Y'		   							  <!-- 17 -->
+									,#{genum}       		  <!-- 18 -->
+									,#{writer}		      <!-- 19 -->
+									,#{reference}		      <!-- 20 -->
+									,#{approver}		      <!-- 21 -->
+									,#{dept}		          <!-- 22 -->
+									,'-'		      <!-- 23 -->
+									          <!-- 24 -->
+									)                                                    
+									
+	</insert>
+	
+			<update id="gtContractInsertFile" parameterType="gtcontractvo">
+			UPDATE GOAT_CONTRACT
+			<choose>
+				<when test="gcfile == null">
+				SET GCFILE = '-'
+				</when>
+				<otherwise>
+				SET GCFILE = #{gcfile}
+				</otherwise>
+				</choose> 
+				WHERE GCNUM = #{gcnum} 
+			</update>
+		
+</mapper>		                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    

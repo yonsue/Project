@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+				"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gt.s.kos.draft.dao.GtDraftDAO">
+	
+	<insert id="draftInsert" parameterType="gtdraftvo">
+		
+		INSERT INTO GOAT_DRAFT(
+								 GDRNUM
+								,GDRSUBJECT
+								,GDRMEMO
+								,GDRFILE
+								,GDRSIGN
+								,GDRCONTRACT
+								,DELETEYN
+								,INSERTDATE
+								,UPDATEDATE
+								,GENUM
+								,WRITER
+								,REFERENCE
+								,APPROVER
+								,DEPT
+								,PROVAL
+								,COUNT
+							  )
+						 VALUES(
+								 #{gdrnum, jdbcType=VARCHAR}
+								,#{gdrsubject, jdbcType=VARCHAR}
+								,#{gdrmemo, jdbcType=VARCHAR}
+								,#{gdrfile, jdbcType=VARCHAR}
+								,#{gdrsign, jdbcType=VARCHAR}
+								,#{gdrcontract, jdbcType=VARCHAR}
+								,'Y'
+								,TO_CHAR(TO_DATE(SYSDATE), 'YYYY-MM-DD') 
+								,TO_CHAR(TO_DATE(SYSDATE), 'YYYY-MM-DD') 
+								,#{genum, jdbcType=VARCHAR}
+								,#{writer, jdbcType=VARCHAR}
+								,#{reference, jdbcType=VARCHAR}
+								,#{approver, jdbcType=VARCHAR}
+								,#{dept, jdbcType=VARCHAR}
+								,#{proval, jdbcType=VARCHAR}
+								,#{count, jdbcType=VARCHAR}					 
+						 		)
+							
+	</insert>
+	
+	<update id="draftInsertFile" parameterType="gtdraftvo">
+	
+		UPDATE GOAT_DRAFT
+			<choose>
+				<when test="gdrfile == null">
+				SET GDRFILE = '-'
+				</when>
+				<otherwise>
+				SET GDRFILE = #{gdrfile}
+			</otherwise>
+			</choose> 
+			WHERE GDRNUM = #{gdrnum} 
+			
+	</update>
+	
+</mapper>

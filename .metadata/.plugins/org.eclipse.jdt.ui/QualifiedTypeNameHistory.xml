@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="a.b.c.gt.kos.vacation.dao.GtVacationDAO"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.mybatis.spring.SqlSessionTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="com.gt.s.kos.vacation.dao.GtVacationDAO"/>
+<fullyQualifiedTypeName name="com.gt.s.kos.vacation.service.GtVacationService"/>
+<fullyQualifiedTypeName name="a.b.c.gt.common.chabun.service.GtChabunService"/>
+<fullyQualifiedTypeName name="com.gt.s.common.chabun.dao.GtChabunDAO"/>
+<fullyQualifiedTypeName name="com.gt.s.kos.vacation.vo.GtVacationVO"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.logging.log4j2.Log4j2AbstractLoggerImpl"/>
+<fullyQualifiedTypeName name="java.util.logging.LogManager"/>
+<fullyQualifiedTypeName name="com.gt.s.kos.business.vo.GtBusinessVO"/>
+<fullyQualifiedTypeName name="com.gt.s.common.chabun.service.GtChabunService"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="com.gt.s.common.ChabunUtil"/>
+<fullyQualifiedTypeName name="com.gt.s.common.DateFormatUtil"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.gt.s.common.K_Session"/>
+<fullyQualifiedTypeName name="com.gt.s.kos.employee.service.GtEmployeeService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.springframework.web.multipart.MultipartFile"/>
+<fullyQualifiedTypeName name="org.apache.log4j.LogManager"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="com.gt.s.common.FileUploadUtil"/>
+<fullyQualifiedTypeName name="com.gt.s.common.CommonUtils"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="java.net.URLDecoder"/>
+<fullyQualifiedTypeName name="java.net.URLEncoder"/>
+<fullyQualifiedTypeName name="com.gt.s.kos.resignation.vo.GtResignationVO"/>
+<fullyQualifiedTypeName name="com.gt.s.kos.draft.vo.GtDraftVO"/>
+<fullyQualifiedTypeName name="com.gt.s.kos.employee.vo.GtEmployeeVO"/>
+<fullyQualifiedTypeName name="com.gt.s.common.ImgUploadUtil"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+</qualifiedTypeNameHistroy>
